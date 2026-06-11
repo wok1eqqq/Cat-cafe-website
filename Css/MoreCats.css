@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+.header {
+    background: #FFC957;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #785616;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-btn {
+    display: none;
+    margin-left: auto;
+}
+
+.menu-btn img {
+    width: 30px;
+}
+
+
+/* MAIN */
+.main {
+    flex: 1;
+    background: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #785616;
+}
+
+
+/* TOP ROW */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.cat {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ✅ ВСЕ КАРТИНКИ ОДИНАКОВЫЕ */
+.cat img,
+.bottom-row img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* BOTTOM ROW */
+.bottom-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* BUTTON */
+.btn {
+    margin-top: 30px;
+    padding: 10px 25px;
+    background: #8B5E15;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #6f4a10;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #FFC957;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+.nav {
+    display: none;
+}
+
+.right {
+    display: none;
+}
+
+.menu-btn {
+    display: block;
+}
+
+.top-row {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bottom-row {
+    flex-direction: column;
+    gap: 20px;
+}
+
+}
