@@ -1,52 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines HTML5 document -->
+<html lang="en"> <!-- Sets language to English -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Table</title>
+    <meta charset="UTF-8"> <!-- Supports all characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+    <title>Book a Table</title> <!-- Page title -->
 
+    <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS file -->
     <link rel="stylesheet" href="../Css/BookATable.css">
 
 </head>
 
 <body>
 
+    <!-- Header (top navigation bar) -->
     <header class="header">
 
+        <!-- Logo section -->
         <div class="logo">
-            <img src="../Images/Logo.png">
-            <span>CAT CAFÉ</span>
+            <img src="../Images/Logo.png"> <!-- Logo image -->
+            <span>CAT CAFÉ</span> <!-- Logo text -->
         </div>
 
+        <!-- Navigation menu -->
         <nav class="nav">
-            <a href="home.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="CatProfiles.html">Cat Profiles</a>
-            <a href="BookATable.html" class="active">Book a Table</a>
+            <a href="BookATable.html" class="active">Book a Table</a> <!-- Current page -->
             <a href="MeetTheCats.html">Meet the Cats</a>
             <a href="Menu.html">Menu</a>
         </nav>
 
+        <!-- Right side (FAQ + login icon) -->
         <div class="right">
-            <a href="FaqPage.html">FAQ</a>
-            <img src="../Images/login.png" class="icon">
+            <a href="FaqPage.html">FAQ</a> <!-- FAQ link -->
+            <img src="../Images/login.png" class="icon"> <!-- Login icon -->
         </div>
 
+        <!-- Mobile menu button -->
         <div class="menu-btn">
-            <img src="../Images/burger-bar.png">
+            <img src="../Images/burger-bar.png"> <!-- Burger menu icon -->
         </div>
 
     </header>
 
+    <!-- Main content -->
     <section class="main">
 
         <div class="container">
 
+            <!-- Left side (image) -->
             <div class="left">
-                <img src="../Images/BookATableImg.png">
+                <img src="../Images/BookATableImg.png"> <!-- Booking image -->
             </div>
 
+            <!-- Right side (text content) -->
             <div class="right-text">
 
                 <p>
@@ -54,7 +65,7 @@
                     with our friendly cats in a calm and cosy environment.
                 </p>
 
-                <h3>How Booking Works</h3>
+                <h3>How Booking Works</h3> <!-- Section heading -->
 
                 <p>
                     Each booking gives you 1 hour access to the café from your
@@ -66,6 +77,7 @@
                     Please select your date and time using the booking calendar below.
                 </p>
 
+                <!-- Button linking to booking page -->
                 <a href="book.html" style="text-decoration:none; color:black;">
                     <button class="btn">Book a Table</button>
                 </a>
@@ -76,6 +88,7 @@
 
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <a href="BookATable.html">Book a visit to the cafe</a>
         <a href="#">FAQs</a>

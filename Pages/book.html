@@ -1,106 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines HTML5 document -->
+<html lang="en"> <!-- Sets language to English -->
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
+    <meta charset="UTF-8"> <!-- Supports all characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+    <title>Booking</title> <!-- Page title -->
 
+    <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS file -->
     <link rel="stylesheet" href="../Css/BookATable.css">
 
 </head>
 
 <body>
 
+    <!-- Header (top navigation bar) -->
     <header class="header">
 
+        <!-- Logo -->
         <div class="logo">
-            <img src="../Images/Logo.png">
-            <span>CAT CAFÉ</span>
+            <img src="../Images/Logo.png"> <!-- Logo image -->
+            <span>CAT CAFÉ</span> <!-- Logo text -->
         </div>
 
+        <!-- Navigation -->
         <nav class="nav">
-            <a href="home.html">Home</a>
+             <a href="../index.html">Home</a> <!-- Back to homepage -->
         </nav>
 
+        <!-- Right side -->
         <div class="right">
-            <a href="FaqPage.html">FAQ</a>
-            <img src="../Images/login.png" class="icon">
+            <a href="FaqPage.html">FAQ</a> <!-- FAQ link -->
+            <img src="../Images/login.png" class="icon"> <!-- Login icon -->
         </div>
 
+        <!-- Mobile menu -->
         <div class="menu-btn">
-            <img src="../Images/burger-bar.png">
+            <img src="../Images/burger-bar.png"> <!-- Burger icon -->
         </div>
 
     </header>
 
 
+    <!-- Main section -->
     <section class="main">
 
         <div class="container">
 
-
+            <!-- Form text section -->
             <div class="form-text">
 
-                <h2>Booking Form</h2>
+                <h2>Booking Form</h2> <!-- Form heading -->
                 <p>Please fill in the details below to reserve your visit:</p>
 
-
+                <!-- Booking form -->
                 <form id="bookingForm">
 
+                    <!-- Table used for layout -->
                     <table class="form-table">
 
                         <tr>
                             <td>Name:</td>
-                            <td><input type="text" id="name"></td>
+                            <td><input type="text" id="name"></td> <!-- Name input -->
                         </tr>
 
                         <tr>
                             <td>Email Address:</td>
-                            <td><input type="email" id="email"></td>
+                            <td><input type="email" id="email"></td> <!-- Email input -->
                         </tr>
 
                         <tr>
                             <td>Phone Number:</td>
-                            <td><input type="text" id="phone"></td>
+                            <td><input type="text" id="phone"></td> <!-- Phone input -->
                         </tr>
 
                         <tr>
                             <td>Number of Guests:</td>
-                            <td><input type="number" id="guests"></td>
+                            <td><input type="number" id="guests"></td> <!-- Guests input -->
                         </tr>
 
                         <tr>
                             <td>Select Date:</td>
-                            <td><input type="date" id="date"></td>
+                            <td><input type="date" id="date"></td> <!-- Date picker -->
                         </tr>
 
                         <tr>
                             <td>Select Time:</td>
-                            <td><input type="time" id="time"></td>
+                            <td><input type="time" id="time"></td> <!-- Time picker -->
                         </tr>
 
                     </table>
 
                     <br>
 
+                    <!-- Submit button -->
                     <button type="submit" class="btn">Send</button>
 
+                    <!-- Error message display -->
                     <p id="error" style="color:red;"></p>
 
                 </form>
 
             </div>
 
-
+            <!-- Image section -->
             <div class="image">
-                <img src="../Images/BookATableImg.png">
+                <img src="../Images/BookATableImg.png"> <!-- Booking image -->
             </div>
 
         </div>
 
+        <!-- Back button -->
         <a href="BookATable.html">
             <button class="btn">Back</button>
         </a>
@@ -108,6 +121,7 @@
     </section>
 
 
+    <!-- Footer -->
     <footer class="footer">
         <a href="BookATable.html">Book a visit to the cafe</a>
         <a>FAQs</a>
@@ -116,12 +130,15 @@
         <a>Contact us</a>
     </footer>
 
+    <!-- JavaScript for form validation -->
     <script>
 
+        // Adds event listener when form is submitted
         document.getElementById("bookingForm").addEventListener("submit", function (e) {
 
-            e.preventDefault();
+            e.preventDefault(); // Stops page refreshing
 
+            // Get values from inputs
             let name = document.getElementById("name").value;
             let email = document.getElementById("email").value;
             let phone = document.getElementById("phone").value;
@@ -129,12 +146,13 @@
             let date = document.getElementById("date").value;
             let time = document.getElementById("time").value;
 
-            let error = document.getElementById("error");
+            let error = document.getElementById("error"); // Error message element
 
+            // Check if any field is empty
             if (name === "" || email === "" || phone === "" || guests === "" || date === "" || time === "") {
-                error.textContent = "Please fill in all fields!";
+                error.textContent = "Please fill in all fields!"; // Show error
             } else {
-                error.textContent = "";
+                error.textContent = ""; // Clear error
                 alert("Booking successful! Thank you for reserving your visit to Cat Café. We look forward to welcoming you and your guests on " + date + " at " + time + ".");
             }
 

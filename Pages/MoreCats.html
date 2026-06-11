@@ -1,59 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines HTML5 document -->
+<html lang="en"> <!-- Page language is English -->
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More Cats</title>
+    <meta charset="UTF-8"> <!-- Supports all characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+    <title>More Cats</title> <!-- Browser tab title -->
 
+    <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS file -->
     <link rel="stylesheet" href="../Css/MoreCats.css">
 
 </head>
 
 <body>
 
+    <!-- Header (top navigation bar) -->
     <header class="header">
 
+        <!-- Logo section -->
         <div class="logo">
-            <img src="../Images/Logo.png">
-            <span>CAT CAFÉ</span>
+            <img src="../Images/Logo.png"> <!-- Logo image -->
+            <span>CAT CAFÉ</span> <!-- Logo text -->
         </div>
 
+        <!-- Navigation menu -->
         <nav class="nav">
-            <a href="home.html">Home</a>
+             <a href="../index.html">Home</a> <!-- Link back to homepage -->
         </nav>
 
+        <!-- Right side (FAQ + login icon) -->
         <div class="right">
-            <a href="FaqPage.html" style="text-decoration:none; color:black;">FAQ</a>
-            <img src="../Images/login.png" class="icon">
+            <a href="FaqPage.html" style="text-decoration:none; color:black;">FAQ</a> <!-- FAQ link -->
+            <img src="../Images/login.png" class="icon"> <!-- Login icon -->
         </div>
 
+        <!-- Mobile menu button -->
         <div class="menu-btn">
-            <img src="../Images/burger-bar.png">
+            <img src="../Images/burger-bar.png"> <!-- Burger icon -->
         </div>
 
     </header>
 
 
+    <!-- Main content -->
     <section class="main">
 
         <div class="container">
 
-            <h1>Meet Our Cats</h1>
+            <h1>Meet Our Cats</h1> <!-- Page heading -->
 
+            <!-- Top row of cats -->
             <div class="top-row">
 
+                <!-- Cat 1 -->
                 <div class="cat">
-                    <img src="../Images/Catimg2.png">
+                    <img src="../Images/Catimg2.png"> <!-- Cat image -->
                     <div>
-                        <h3>Whiskers</h3>
+                        <h3>Whiskers</h3> <!-- Cat name -->
                         <p>Age: 3 years</p>
                         <p>Personality: Friendly and playful</p>
                     </div>
                 </div>
 
+                <!-- Cat 2 -->
                 <div class="cat">
                     <img src="../Images/Catimg1.png">
                     <div>
@@ -66,9 +78,10 @@
             </div>
 
 
+            <!-- Bottom row -->
             <div class="bottom-row">
 
-                <img src="../Images/MeetCats.png">
+                <img src="../Images/MeetCats.png"> <!-- Large cat image -->
 
                 <div>
                     <h3>Wokie</h3>
@@ -78,6 +91,7 @@
 
             </div>
 
+            <!-- Back button -->
             <a href="CatProfiles.html" style="text-decoration:none; color:black;">
                 <button class="btn">Back</button>
             </a>
@@ -87,6 +101,7 @@
     </section>
 
 
+    <!-- Footer -->
     <footer class="footer">
         <a href="BookATable.html">Book a visit to the cafe</a>
         <a>FAQs</a>
